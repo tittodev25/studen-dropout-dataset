@@ -24,15 +24,29 @@ It contains demographic, academic, and financial data.
 
 ## Data Quality Simulation
 
+## ⚠️ Data Quality Simulation
+
 ### Null Values
-- 5% of the dataset was randomly replaced with null values.
-- This simulates missing real-world data.
+- Approximately 5% of the dataset was randomly selected and replaced with null (missing) values across different variables.
+- The selection was performed independently for each column, meaning that missing values can appear in multiple attributes for the same record.
+- This approach simulates real-world scenarios where data may be incomplete due to:
+  - Errors during data collection
+  - Missing survey responses
+  - System or recording failures
+
+Including null values is important because it allows testing data preprocessing techniques such as imputation, deletion, or handling missing data in Machine Learning pipelines.
 
 ### Outliers
-- Some values in `first_semester_gpa` were set to **0**
-- Some values in `admission_score` were set to **500**
+- Artificial outliers were intentionally introduced in specific variables to simulate abnormal or extreme cases:
+  - In `first_semester_gpa`, some values were set to **0**, which is outside the normal academic grading range (typically 1.5–5.0).
+  - In `admission_score`, some values were set to **500**, exceeding the expected maximum score (200–400).
 
-These simulate abnormal or extreme cases.
+- These outliers represent potential real-world issues such as:
+  - Data entry mistakes
+  - Measurement errors
+  - Exceptional or rare cases
+
+Including outliers helps evaluate how robust Machine Learning models are when faced with noisy or extreme data, and allows the application of techniques such as outlier detection, normalization, or data cleaning.
 
 ## Purpose
 
