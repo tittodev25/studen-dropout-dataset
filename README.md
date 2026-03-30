@@ -7,7 +7,7 @@ This dataset simulates a university system to predict student dropout risk durin
 
 It contains demographic, academic, and financial data.
 
-## Variables
+## Variables 
 
 | Variable | Type | Range / Values | Description |
 |----------|------|----------------|-------------|
