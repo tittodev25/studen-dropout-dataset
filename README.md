@@ -12,23 +12,14 @@ It contains demographic, academic, and financial data.
 | Variable | Type | Range / Values | Description |
 |----------|------|----------------|-------------|
 |   age    | Numeric |    17–30    | Student age |
-
 |  gender  | Categorical | Male, Female | Gender |
-
 |  origin  | Categorical | Urban, Rural | Place of origin |
-
 | highschool_gpa | Numeric | 2.0–5.0 | High school GPA |
-
 | admission_score | Numeric | 200–400 | Admission test score |
-
 | first_semester_gpa | Numeric | 1.5–5.0 | First semester GPA |
-
 | socioeconomic_level | Numeric | 1–6 | Socioeconomic level |
-
 | scholarship | Categorical | Yes, No | Scholarship status |
-
 |   loan   | Categorical | Yes, No | Loan status |
-
 |  dropout | Categorical | Yes, No | Target variable |
 
 ## Data Quality Simulation
